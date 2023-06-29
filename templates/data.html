@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block title %}first {% endblock %}
+
+{% block content%}
+
+<ul>
+    {% for a in data %}
+
+    <li>{{a.first_name}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock%}
